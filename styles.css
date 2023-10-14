@@ -1,0 +1,232 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins";
+  box-sizing: border-box;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+  background-color: black;
+}
+main {
+  width: 100vw;
+  height: 100vh;
+  background-image: linear-gradient(
+    to right top,
+    #0c263c,
+    #0c233a,
+    #0c2037,
+    #0c1e35,
+    #0c1b32,
+    #0f1a32,
+    #131a32,
+    #161932,
+    #1c1a34,
+    #231b36,
+    #2a1b38,
+    #301c39
+  );
+  background-size: 200% 200%;
+  animation: gradientAnimation 5s linear infinite;
+}
+nav > .navUp {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  border-bottom: 2px solid white;
+}
+nav .navUp a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.5s ease-in-out;
+}
+nav .navUp a:hover {
+  border: 1px solid white;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  background-color: wheat;
+  color: #1909f3;
+}
+nav .navUp a:hover:first-of-type {
+  background-color: rgb(241, 228, 202);
+  color: #1909f3;
+}
+nav .navUp .left {
+  display: flex;
+  align-items: center;
+  /* flex-direction: row; */
+  gap: 1rem;
+}
+nav .left a:first-of-type {
+  color: #4df14d;
+  font-weight: 700;
+  font-size: 1.4rem;
+}
+nav .navUp .right {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+nav .navDown {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem 2rem;
+  border-bottom: 2px solid white;
+  align-items: center;
+  /* background-color: aliceblue; */
+}
+nav .navDown a {
+  color: white;
+  text-decoration: none;
+}
+nav .navDown .offers {
+  display: flex;
+  gap: 1rem;
+}
+.navDown .store {
+  color: white;
+
+  transition: all 0.5s ease-in-out;
+  font-weight: 500;
+}
+.navDown .store:hover {
+  background-color: wheat;
+  color: #1909f3;
+  font-weight: 600;
+  padding: 0.4rem;
+  border-radius: 7px;
+  /* border: 1px solid white; */
+}
+nav .navDown a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.5s ease-in-out;
+}
+nav .navDown a:hover {
+  /* border: 1px solid white; */
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  background-color: wheat;
+  color:#1909f3;
+}
+nav .navDown button {
+  background-color: #4df14d;
+  padding: 0.5rem;
+  border-radius: 0.58rem;
+  outline: none;
+  font-weight: 500;
+  border: none;
+  color: black;
+  transition: all 0.5s ease-in-out;
+  cursor: pointer;
+}
+nav .navDown button:hover {
+  background-color: rgb(241, 228, 202);
+  color: #1909f3;
+  font-weight: 600;
+  scale: 1.2;
+}
+section {
+  /* border: 1px solid wheat !important; */
+  display: flex;
+  padding: 0 1rem;
+  justify-content: space-between;
+}
+section img {
+  width: 15rem;
+  padding: 1rem 1rem;
+}
+.leftD {
+  width: 25%;
+  /* background-color: #fff; */
+  height: auto;
+}
+.leftD > img {
+  margin-left: 1rem;
+}
+.leftD > span {
+  padding-left: 8rem;
+  margin-right: 2rem;
+}
+.rightD {
+  width: 25%;
+  /* background-color: #fff; */
+  height: auto;
+}
+.rightD > img {
+  margin-left: 6rem;
+}
+.rightD > span {
+  margin-right: 3rem;
+}
+section {
+  border-bottom: 2px solid white;
+}
+section .heading {
+  display: flex;
+  /* background-color: blue; */
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+section h1 {
+  /* transition: all 0.5s ease-in-out; */
+  text-align: center;
+  font-size: 2.4rem;
+  font-weight: 800;
+  color: white;
+}
+section .center {
+  vertical-align: middle;
+  padding: auto;
+  /* padding-top: 4rem; */
+  width: auto;
+  height: 5rem;
+}
+/* section h1:hover {
+  scale: 1.1;
+} */
+.butt button {
+  background-color: #4df14d;
+  background-color: #4df14d;
+  padding: 0.5rem;
+  border-radius: 0.58rem;
+  outline: none;
+  border: none;
+  color: black;
+  font-weight: 500;
+  transition: all 0.5s ease-in-out;
+  margin-top: 1rem;
+  cursor: pointer;
+}
+.butt button:hover {
+  background-color: rgb(241, 228, 202);
+  color: #1909f3;
+  font-weight: 600;
+  scale: 1.2;
+}
+.divvv {
+  color: white;
+  height: 100px;
+  width: 100px;
+  background-color: red;
+}
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 100%;
+  }
+  100% {
+    background-position: 100% 0%;
+  }
+}
+.icon {
+  color: white;
+  padding-top: 5rem;
+  font-size: 2rem;
+}
